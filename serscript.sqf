@@ -1,4 +1,5 @@
-//   [] spawn fnc_timer2;
+if (isServer) then {
+	  [] spawn fnc_timer2;
 fnc_timer2 = {
    waitUntil { sleep 0.221; warbegins == 1 }; 
    _missionTime = 3000; // Время в секундах 
