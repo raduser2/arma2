@@ -28,8 +28,8 @@ fnc_timer2 = {
                 };
 
                 _timeleft1 = diag_tickTime - _srv_gameStart;
-                _timeleft2 = _missionTime + ab1 + ab2 + ab3
-                if ((_timeleft1 > _timeleft2)) then
+                _timeleft2 = _missionTime + ab1 + ab2 + ab3; 
+                if ((_timeleft1 > _timeleft2)) then {
                 	{["MCB win!"] call SerP_EndMission;
                 } else {
                 	{["plohieparni win"] call SerP_EndMission;
